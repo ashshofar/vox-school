@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SchoolController@index')->name('school.index');
 
 
 // Route::group(['prefix' => 'organizer'], function() {
